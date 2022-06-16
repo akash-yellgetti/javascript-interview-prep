@@ -45,15 +45,31 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
  * @param {number} target
  * @return {number[]}
  */
+// var twoSum = function(nums, target) {
+//     const series = 1;
+//     let result = [];
+//     for(const i in nums) {
+//       for(const j in nums) {
+//         if((parseInt(nums[i])+parseInt(nums[j])) === target){
+//           result = [parseInt(j), parseInt(i)];
+//         }
+//       }
+//     }
+//     return result;
+// };
+//
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
 var twoSum = function(nums, target) {
-    const series = 1;
-    let result = [];
-    for(const i in nums) {
-      for(const j in nums) {
-        if((parseInt(nums[i])+parseInt(nums[j])) === target){
-          result = [parseInt(j), parseInt(i)];
+    const result = [];
+    const hashMap = {};
+    for(let i = 0; i < nums.length; i++) {
+        if(nums[i] in hashMap) {
+            return [hashMap[nums[i]], i]
         }
-      }
+        hashMap[target-nums[i]] = i;
     }
-    return result;
 };

@@ -21,11 +21,11 @@ for (let i = 0; i < l1.length; i++) {
     // for (let j = 0; j < l2.length; j++) {
       let res = l1[i]+parseInt(l2[i] || 0)+parseInt(carry);
       // console.log('split', res.toString().split('')[0])
-      carry = 0;
-      let r = res >= 10 ? res.toString().split('')[1] : res;
-      carry = res >= 10 ? res.toString().split('')[0] : carry;
-      console.log('carry', carry)
-      l3[i] = parseInt(r);
+      // carry = 0;
+      // let r = res >= 10 ? res % 10 : res;
+      // carry = res >= 10 ? res.toString().split('')[0] : carry;
+      // console.log('carry', carry)
+      // l3[i] = parseInt(r);
 
     // }
 }
