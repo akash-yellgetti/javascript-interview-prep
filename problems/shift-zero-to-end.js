@@ -19,14 +19,23 @@
 //
 const input = [2,6,8,0,2,5,7,0,3,0,6]
 const output =[2,6,8,2,5,7,3,6,0,0,0]
-const len = input.length;
-for (let i = 0; i < len; i++) {
-    for (let j = i + 1; j < len; j++) {
-        if(input[i] === 0){
-          input[i] = input[j];
-          input[j] = 0;
-        }
-    }
+
+let n = input.length;
+let m = 0;
+function swap(input,j,i){
+  temp = input[j];
+  input[j] = input[i];
+  input[i] = temp
 }
+for(let i=0;i<n;i++){
+  if(input[i] != 0){
+    console.log(i, m)
+    swap(input,m,i);
+    m++;
+  }
+
+  console.log(input)
+}
+
 
 console.log(input)

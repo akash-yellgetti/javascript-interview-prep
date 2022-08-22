@@ -1,0 +1,58 @@
+[
+    {
+        key: "DSA",
+        title: "Classification of DSA",
+        children: [
+            {
+                key: "linear",
+                title: "Linear",
+                children: [
+                    {
+                        key: "static",
+                        title: "Static",
+                        children: [
+                            {
+                                key: "array",
+                                title: "Array",
+                            }
+                        ]
+                        
+                    },
+                    {
+                        key: "dynamic",
+                        title: "Dynamic",
+                        children: [
+                            {
+                                key: "queue",
+                                title: "Queue",
+                            },
+                            {
+                                key: "stack",
+                                title: "Stack",
+                            },
+                            {
+                                key: "linkedList",
+                                title: "Linked List",
+                            }
+                        ]
+                    }
+                ]
+
+            },
+            {
+                key: "nonlinear",
+                title: "Non Linear",
+                children: [
+                    {
+                        key: "tree",
+                        title: "Tree",
+                    },
+                    {
+                        key: "graph",
+                        title: "graph",
+                    }
+                ]
+            }
+        ]
+    }
+]
